@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane1" fx:id="AnchorPane1" maxHeight="1080.0" maxWidth="1920.0" minHeight="344.0" minWidth="630.0" prefHeight="344.0" prefWidth="630.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.VentanaPuntuacionController">
+   <Pane fx:id="panelpuntaje" layoutX="94.0" layoutY="78.0" prefHeight="201.0" prefWidth="456.0" stylesheets="@style.css">   <children>
+         <Pane fx:id="panelTitulo1" layoutX="24.0" layoutY="14.0" prefHeight="61.0" prefWidth="408.0">
+            <children>
+            <ImageView fitHeight="83.0" fitWidth="85.0" layoutX="12.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/imagenes/Emogi.png" />
+                    </image>
+            </ImageView>
+                                         <!-- Titulo -->
+                 <Label fx:id="labelPuntuacion" layoutX="18.0" layoutY="10.0" prefHeight="20.0" prefWidth="401.0" text="PUNTUACIÓN TOTAL:  5 PUNTOS" textFill="white">
+                     <font>
+                         <Font name="Arial Bold" size="24" />
+                     </font>
+                 </Label>
+            </children>
+         </Pane>
+         <HBox alignment="CENTER_LEFT" spacing="5" />
+      <TextField fx:id="txtNombreJugador" layoutX="130.0" layoutY="101.0" prefHeight="35.0" prefWidth="227.0" promptText="Ingresa tu nombre" />
+         <Button fx:id="guardar_puntuacion" layoutX="151.0" layoutY="164.0" mnemonicParsing="false" onAction="#guardarPuntuacion" prefHeight="75.0" prefWidth="186.0" stylesheets="@style.css" text="ENVIAR" />
+      </children>
+   </Pane>
+
+</AnchorPane>

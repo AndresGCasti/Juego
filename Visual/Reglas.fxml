@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ReglasController">
+   <children>
+      <Pane fx:id="panelPcomojugar" maxHeight="980.0" maxWidth="1820.0" minHeight="646.0" minWidth="695.0" prefHeight="600.0" prefWidth="1266.0" style="-fx-background-radius: 50;" stylesheets="@style.css">
+         <children>
+            <Pane fx:id="PaneComojugar1" layoutX="56.0" layoutY="59.0" prefHeight="485.0" prefWidth="592.0">
+               <children>
+                  <Label fx:id="lbsubtitulo1" layoutX="14.0" layoutY="8.0" text="Objetivo del juego:" textFill="#000000fd">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbtexto1" layoutX="8.0" layoutY="264.0" prefHeight="94.0" prefWidth="560.0" text="Las palabras deben tener mínimo 3 letras y máximo 9 letras. Debes pulsar las letras en orden para formar la palabra sin repetir la casilla ya seleccionada." textAlignment="JUSTIFY" textFill="#fffffffc" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbsubtitulo1" layoutX="14.0" layoutY="127.0" text="Duracion de la partida:" textFill="#000000fd">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbtexto1" layoutX="14.0" layoutY="155.0" prefHeight="75.0" prefWidth="548.0" text="Cada partida dura 3 minutos. El jugador debe formar palabras antes de que se acabe el tiempo." textAlignment="JUSTIFY" textFill="#fffffffc" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbsubtitulo1" layoutX="11.0" layoutY="230.0" text="Formación de palabras:" textFill="#000000fd">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbtexto1" layoutX="9.0" layoutY="383.0" prefHeight="94.0" prefWidth="560.0" text="No se permiten nombres propios, siglas o palabras inventadas. No se pueden repetir palabras en la misma partida." textAlignment="JUSTIFY" textFill="#fffffffc" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbsubtitulo1" layoutX="14.0" layoutY="358.0" text="Restricciones:" textFill="#000000fd">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbtexto1" layoutX="14.0" layoutY="31.0" prefHeight="106.0" prefWidth="548.0" text="Formar tantas palabras válidas como sea posible en un tiempo limitado, utilizando las letras disponibles en un tablero de 6x6 (36 letras en total)." textAlignment="JUSTIFY" textFill="#fffffffc" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btncerrarreglas" layoutX="609.0" layoutY="557.0" mnemonicParsing="false" onAction="#cerrarreglas" text="Cerrar" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Pane fx:id="PaneComojugar2" layoutX="711.0" layoutY="59.0" prefHeight="485.0" prefWidth="518.0">
+               <children>
+                  <Label fx:id="lbtexto1" layoutX="25.0" layoutY="130.0" prefHeight="226.0" prefWidth="181.0" text="3 letras = 2 puntos 4 letras = 4 puntos 5 letras = 6 puntos 6 letras = 8 puntos 7 letras = 10 puntos 8 letras = 12 puntos 9 letras = 15 puntos " textAlignment="JUSTIFY" textFill="#fffffffc" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbtexto11" layoutX="25.0" layoutY="31.0" prefHeight="106.0" prefWidth="469.0" text="Se aceptan todas las palabras siempre que se puedan encontrar en la lista de palabras de WordFamae." textAlignment="JUSTIFY" textFill="#fffffffc" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbtexto11" layoutX="25.0" layoutY="356.0" prefHeight="106.0" prefWidth="479.0" text="No se permiten nombres de personas, abreviaturas o palabras con guion." textAlignment="JUSTIFY" textFill="#fffffffc" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="868.0" layoutY="14.0" prefHeight="38.0" prefWidth="238.0" style="-fx-background-radius: 25; -fx-background-color: #c416e7;">
+               <children>
+                  <Label fx:id="lbtexto1" layoutX="14.0" prefHeight="38.0" prefWidth="258.0" text="Sistema De Puntuacion" textAlignment="JUSTIFY" textFill="#fffffffc" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="233.0" layoutY="14.0" prefHeight="38.0" prefWidth="238.0" style="-fx-background-radius: 25; -fx-background-color: #c416e7;">
+               <children>
+                  <Label fx:id="lbtexto11" layoutX="85.0" prefHeight="38.0" prefWidth="81.0" text="Reglas" textAlignment="JUSTIFY" textFill="#fffffffc" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

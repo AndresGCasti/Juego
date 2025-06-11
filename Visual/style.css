@@ -1,0 +1,311 @@
+@font-face {
+    font-family: "Kanit";
+    src: url("../Font/Kanit-Bold.ttf");
+    
+}
+@font-face {
+   font-family: "LilitaOne";
+   src: url("../Font/LilitaOne-Regular.ttf"); 
+}
+.root {
+    -fx-font-family: "Kanit";
+}
+#rootPane {
+    -fx-background-color: transparent;
+}
+
+AnchorPane{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/imagenes/Fondo.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+/*Logo*/
+#imaglogo{
+    -fx-effect: dropshadow(gaussian, rgba(170, 0, 255), 30, 0.4, 0, 2);
+}
+#imaglogo:hover{
+    -fx-effect: dropshadow(gaussian, rgba(129, 68, 237), 30, 0.7, 0, 2);
+}
+/*Botones*/
+Button{
+    -fx-font-family: "Kanit";
+    -fx-background-color: #3EC7EE; /* Color azul */
+    -fx-text-fill: #212121; /* Color del texto */
+    -fx-font-size: 35px;
+    -fx-font-weight: bold; 
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+}
+#Musica:hover{
+    -fx-background-color: #319eee; 
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(129, 68, 237), 30, 0.1, 0, 2);
+}
+
+#btncomojugar {
+    -fx-font-size: 20px;
+}
+#btncomojugar:hover {
+    -fx-background-color: #319eee; 
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(129, 68, 237), 30, 0.1, 0, 1);
+}
+#btnJugar:hover{
+    -fx-background-color: #319eee; 
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 41px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(129, 68, 237), 30, 0.1, 0, 2);
+}
+/*boton para volver a la pagina principal*/
+#btnAtras {
+   -fx-font-size: 25px;
+}
+#btnAtras:hover {
+    -fx-background-color: #319eee; 
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 25px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(129, 68, 237), 1, 1, 0, 1);
+}
+/*boton para verificar palabra*/
+#btnVerificar{
+   -fx-font-size: 40px;
+}
+#btnVerificar:hover{
+    -fx-background-color: #319eee; 
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 40px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(129, 68, 237), 2, 2, 0, 2);
+}
+/*boton para eliminar palabra*/
+#btneliminar{
+     -fx-text-fill: #ffffff;
+     -fx-background-color: #bb0808; 
+     -fx-font-size: 40px;
+}
+#btneliminar:hover{
+    -fx-background-color: #d53c26; 
+    -fx-font-size: 40px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(239, 122, 122), 3, 3, 0, 2);
+}
+/*boton de devolverse*/
+#btncerrarreglas{
+    -fx-text-fill: #ffffff; 
+}
+#btncerrarreglas:hover {
+    -fx-background-color: #ad35e5; 
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(129, 68, 237), 30, 0.3, 0, 1);
+}
+/*Archopane de puntaje*/
+#AnchorPane1{
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+/*Botones del puntaje*/
+#btncomenzar, #btnsalirpuntaje{
+    -fx-text-fill: #ffffff; 
+    -fx-background-radius: 25px; 
+    -fx-font-size: 20px;
+}
+#btncomenzar{
+    -fx-background-color:#38c706; 
+}
+#btnsalirpuntaje{
+    -fx-background-color:#d53c26; 
+}
+#btncomenzar:hover {
+    -fx-background-color: #308e10; 
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(48, 142, 16), 1, 1, 0, 1);
+}
+#btnsalirpuntaje:hover{
+    -fx-background-color:#a5220f; 
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(165, 34, 15), 1, 1, 0, 1);
+}
+/*Botones_tabla*/
+.boton-estilizado:hover {
+    -fx-background-color: #319eee; 
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 35px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(129, 68, 237), 1.7, 1.7, 0, 1.7);
+}
+#guardar_puntuacion{
+    -fx-background-color: linear-gradient(#a847e3, #3eacc2);
+    -fx-text-fill: white;
+    -fx-background-radius: 40px;
+    -fx-font-size: 35px;
+    -fx-font-weight: bold;
+}
+
+#guardar_puntuacion:hover{
+    -fx-background-color: linear-gradient(#3eacc2, #a847e3);
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(129, 68, 237), 1.7, 1.7, 0, 1.7);
+}
+/*panel como jugar*/
+#panelPcomojugar{
+    -fx-background-color: #6b1faa; 
+}
+#PaneComojugar1, #PaneComojugar2 {
+    -fx-background-radius: 25px; 
+    -fx-background-color: #319eee;
+}
+/*panel de los puntajes*/
+#panelpuntaje{
+    -fx-background-radius: 40px;
+    -fx-background-color: linear-gradient(#8605d5, #3eacc2);
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(103, 184, 244 ),30, 0.5, 0, 2);
+}
+#panelTitulo{
+     -fx-background-color:#b921ac;
+     -fx-background-radius: 50px; 
+}
+#panelTitulo1{
+     -fx-background-color:  #ffffff;
+     -fx-background-radius: 50px; 
+}
+/*Label titulo*/
+#lbleader{
+    -fx-font-family: "Kanit";
+    -fx-font-size: 30px;
+}
+/*Label como jugar*/
+#lbsubtitulo1{
+    -fx-font-family: "Kanit";
+     -fx-font-size: 22px;
+}
+#lbtexto1{
+     -fx-font-family: "Kanit";
+     -fx-font-size: 20px;
+}
+#lbtexto11{
+     -fx-font-family: "Kanit";
+     -fx-font-size: 22px;
+}
+
+
+.activo {
+    -fx-font-family:"LilitaOne"; 
+    -fx-background-color: #319eee; 
+    -fx-text-fill: #ffffff;
+}
+/*Label Tiemppo*/
+#reloj{
+    -fx-font-family:"LilitaOne"; 
+    -fx-font-size: 50px;
+    -fx-font-weight: bold; 
+}
+/*----------------------------------------*/
+/* Estilo general del TableView */
+.table-view {
+    -fx-background-color: #6b2897;
+}
+
+/* Estilo para las filas */
+.table-row-cell {
+    -fx-background-color: #f3f3f3;
+     -fx-font-family: "Kanit";
+    -fx-font-weight: bold; 
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+}
+
+/* Estilo para los encabezados */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #b39ddb, #9575cd);
+}
+/* Estilo para todo*/
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35px;
+    -fx-background-color: #3EC7EE;
+}
+
+.table-view .label {
+    -fx-text-fill: black;
+}
+/*Estilo del contenido */
+.table-cell {
+    -fx-background-color: #6b2897; /* Cambia este color al que desees */
+    -fx-text-fill: white;
+    -fx-font-family: "Kanit";
+    -fx-font-weight: bold;
+    -fx-font-size: 30px;
+}
+/* Columna específica: PALABRA */
+#tabPalabra {
+    -fx-font-size: 30px;
+    -fx-alignment: CENTER-LEFT;
+}
+
+/* Columna específica: PUNTOS */
+#tabPuntos  { 
+    -fx-font-size: 30px;
+    -fx-alignment: CENTER;
+}
+/**/
+.table-view .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+}
+/* todo lo que es el Scroll */
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-pref-width: 10px;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #00ffff; /* Color del "thumb" (botón deslizante) */
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: #5b249e; /* Fondo del scroll */
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-shape: " "; /* Oculta las flechitas */
+}
+.text-field {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-color: transparent;
+    -fx-padding: 8px;
+    -fx-font-family: 'Kanit', sans-serif;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.15), 5, 0, 0, 1);
+}
+.text-field:focused {
+    -fx-background-color: #f0f8ff;
+    -fx-effect: dropshadow(one-pass-box, rgba(30, 144, 255, 0.5), 8, 0, 0, 2);
+}
+
+#labelPuntuacion{
+    -fx-font-family: 'Kanit', sans-serif;
+    -fx-font-size: 25px;
+    -fx-text-fill: #5f1457;
+}
